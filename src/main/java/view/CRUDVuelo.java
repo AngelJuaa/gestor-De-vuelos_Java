@@ -25,7 +25,7 @@ import modelo.Vuelos;
 public class CRUDVuelo extends javax.swing.JFrame {
 
 SimpleDateFormat format = new SimpleDateFormat("EEE dd MMM yyyy hh:mm");
-
+private VuelosControler vuelosController = new VuelosControler();
         private static DefaultTableModel tabla;
     private int renglon;
    
@@ -41,7 +41,7 @@ SimpleDateFormat format = new SimpleDateFormat("EEE dd MMM yyyy hh:mm");
         btncreate.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                VuelosControler.createVuelo();
+                
 
             }
         });
@@ -51,13 +51,13 @@ SimpleDateFormat format = new SimpleDateFormat("EEE dd MMM yyyy hh:mm");
         btnupdate.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                VuelosControler.updateVuelo();
+               
             }
         });
         btndelate.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //VuelosControler.deleteVuelo();
+               
             }
         });
     }
