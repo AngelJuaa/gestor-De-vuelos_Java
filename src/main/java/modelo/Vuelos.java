@@ -97,7 +97,8 @@ public class Vuelos {
 
     @Override
     public String toString() {
-        return "Vuelos{" + "codigo=" + codigo + ", origen=" + origen + ", destino=" + destino + ", hora=" + hora + ", fecha_llegada=" + fecha_llegada + ", fecha_completa=" + fecha_completa + ", numeroPasajeros=" + numeroPasajeros + '}';
+        return "Vuelos{" + "codigo=" + codigo + ", origen=" + origen + ", destino=" + destino + ", hora=" + hora + ", fecha_llegada=" + fecha_llegada + 
+                ", fecha_completa=" + fecha_completa + ", numeroPasajeros=" + numeroPasajeros + '}';
     }
 
     public void emptyAll(){

@@ -19,7 +19,7 @@ public class VuelosExamen {
     static VuelosControler controler;
     public static void main(String[] args){
         
-        model = new Vuelos(codigo, origen, destino, hora, fecha_completa, numeroPasajeros);
+        model = new Vuelos(codigo, origen, destino, hora, fecha_completa, numeroPasajeros, fecha_llegada);
         view = new VueloView();
         controler = new VuelosControler(model, view); 
         

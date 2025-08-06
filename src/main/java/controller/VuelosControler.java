@@ -39,20 +39,20 @@ public class VuelosControler {
 
     public Vuelos buscarVuelo(String codigo) {
         return vuelos.stream()
-                     .filter(v -> v.getcodigo().equalsIgnoreCase(codigo))
+                     .filter(v -> v.getCodigo().equalsIgnoreCase(codigo))
                      .findFirst()
                      .orElse(null);
     }
 
     public List<Vuelos> vuelosOrdenados() {
         List<Vuelos> ordenados = new ArrayList<>(vuelos);
-        ordenados.sort((Vuelos v1, Vuelos v2) -> v2.getfecha_completa().compareTo(v1.getfecha_completa()));
+        ordenados.sort((Vuelos v1, Vuelos v2) -> v2.getFecha_llegada().compareTo(v1.getFecha_llegada()));
         return ordenados;
     }
 
     public Vuelos vueloPasajeros() {
         return vuelos.stream()
-                     .min((v1, v2) -> v1.getnumeropasajeros().compareTo(v2.getnumeropasajeros()))
+                     .min((v1, v2) -> v1.getNumeroPasajeros().compareTo(v2.getNumeroPasajeros()))
                      .orElse(null);
     }
 
